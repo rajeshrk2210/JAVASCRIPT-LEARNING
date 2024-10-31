@@ -1,0 +1,17 @@
+// nested destructuring
+const users = [
+    {userId: 1, firstName: 'harshit', gender: 'male'},
+    {userId: 2, firstName: 'mohit', gender: 'male'},
+    {userId: 3, firstName: 'nitish', gender: 'male'}
+]
+
+// const [user1, user2, user3] = users;
+// console.log(user1);
+
+// const [{firstName}, , {gender}] = users; // Get firstName of user1 and gender of user3
+// console.log(firstName, gender);
+
+const [{firstName: user1firstName, userId}, , {gender: user3gender}] = users; // Get firstName of user1 and gender of user3
+console.log(user1firstName);
+console.log(userId);
+console.log(user3gender);
